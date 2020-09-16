@@ -84,8 +84,8 @@ h1
 }
 .button
 {
-	margin-top:30px;
-	margin-left:440px;
+	margin-top:375px;
+	margin-left:275px;
 }	
 
 .btn
@@ -108,6 +108,12 @@ h1
 .btn-two
 {
 	font-family:"Roboto", sans-sarif;
+}
+
+.btn-one:hover
+{
+	color:white;
+	background-color:black;
 }
 
 .btn-two:hover
