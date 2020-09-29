@@ -1,0 +1,190 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+font-family: 'Noto Serif', serif;
+font-size:18px;
+color:#FFFFFF;
+background-color:rgba(31,36,33,0.5);
+border:5px solid white;
+}
+
+h2{
+	font-family: 'Cormorant', serif;
+	font-size:100px;
+	padding:4px;
+}
+
+h4{
+	padding:0px;
+}
+
+.site{
+color:#FFFFFF;
+text-decoration:none;
+}
+
+/* Style the header */
+.header {
+  grid-area: header;
+  background-color:rgba(31,36,33,0.5);
+  color:#FFFFFF;
+  font-family: 'Open Sans Condensed', sans-serif;
+  padding: 30px;
+  text-align: center;
+  font-size: 40px;
+  background-image:url(images/hero.jpg);
+  background-repeat:no-repeat;	
+  background-size:cover;
+  background-attachment:fixed;
+  border:5px solid white;
+}
+
+/* The grid container */
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'middle middle middle middle middle middle'
+    'left1 left1 left1 right1 right1 right1'
+	'left middle2 middle2 middle2 middle2 middle2'
+    'footer footer footer footer footer footer';
+  /* grid-column-gap: 10px; - if you want gap between the columns */
+}
+
+.left1{
+	grid-area: left1;
+	height: 400px; /* or any value */
+    overflow-y: auto;
+	background-color:rgba(31,36,33,0.5);
+	color:white;
+	border:5px solid white;
+	padding:10px;
+}
+
+.right1{
+	grid-area: right1;
+	height: 400px; /* or any value */
+    overflow-y: auto;
+	background-color:rgba(31,36,33,0.5);
+	color:white;
+	border:5px solid white;
+	padding:10px;
+}
+
+.middle2{
+	grid-area:middle2;
+}
+
+#link{
+	
+}
+
+img{
+	width:125px;
+	height:auto;
+}
+
+.btn
+{
+border:1px solid black;
+padding:20px 40px;
+text-decoration:none;
+margin-right:5px;
+font-size:19px;
+text-transform:uppercase;
+font-family:"Roboto", sans-serif !important;
+}
+
+.btn-one
+{
+background-color:#000000;
+color:white;
+font-family:"Roboto", sans-serif;
+}
+
+.btn-two
+{
+background-color:black;
+color:white;
+font-family:"Roboto", sans-sarif;
+}
+
+.btn-three
+{
+background-color:black;
+color:white;
+font-family:"Roboto", sans-sarif;
+}
+
+.btn-four{
+	background-color:black;
+	color:white;
+	font-family:"Roboto", sans-sarif;
+	font-size:15px;
+}
+
+.btn-one:hover
+{
+color:black;
+background-color:white;
+transition: all 0.5s ease-in;
+}
+
+.btn-two:hover
+{
+background-color:white;
+color:black;
+transition: all 0.5s ease-in;
+}
+
+.btn-three:hover
+{
+background-color:white;
+color:black;
+transition: all 0.5s ease-in;
+}
+
+.btn-four:hover
+{
+background-color:white;
+color:black;
+transition: all 0.5s ease-in;
+}
+
+.middle{
+  padding: 10px;
+}
+
+/* Style the left column */
+.left {
+  grid-area: left;
+}
+
+/* Style the middle column */
+.middle {
+  grid-area: middle;
+}
+
+/* Style the footer */
+.footer {
+  grid-area: footer;
+  background-color:rgba(31,36,33,0.5);
+  padding: 10px;
+  text-align: center;
+  border:5px solid white;
+}
+
+/* Responsive layout - makes the three columns stack on top of each
+other instead of next to each other
+@media (max-width: 600px) {
+  .grid-container  {
+    grid-template-areas:
+      'header header header header header header'
+      'left left left left left left'
+      'middle middle middle middle middle middle'
+      'right right right right right right'
+      'footer footer footer footer footer footer';
+  }
+}*/
