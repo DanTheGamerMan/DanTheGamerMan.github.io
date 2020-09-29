@@ -1,0 +1,291 @@
+body{
+margin:0px;
+padding:0px;
+font-family: 'Source Serif Pro', serif
+}
+footer{
+display:flex;
+justify-content:center;
+align-items:center;
+}
+#navdesk{
+display:none;
+grid-template-columns:0.8fr 1fr 1fr 0.7fr 1fr;
+position:fixed;
+width:100%;
+}
+#navmob{
+height:50px;
+overflow:hidden;
+}
+nav > a{
+height:50px;
+background-color:#000000;
+color:#FFFBFE;
+text-decoration:none;
+display:flex;
+align-items:center;
+justify-content:center;
+font-weight:bold;
+}
+nav > a:hover{
+color:#000000;
+background-color:#FFFBFE;
+}
+main > *{
+border:2px solid #FFFBFE;
+}
+main a{
+color:#720000;
+text-decoration:none;
+}
+main a:hover{
+color:#494949;
+}
+main{
+display:grid;
+color:#FFFBFE;
+background-color:#000000;
+}
+header{
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:25px;
+color:#FFFBFE;
+margin-top:50px;
+}
+figure{
+padding:30px;
+}
+figure > img{
+width:100%;
+}
+article{
+background-color:#000000;
+color:#FFFBFE;
+}
+article > h3{
+color:#FFFBFE;
+font-family: 'Slabo 27px', serif;
+}
+aside{
+background-color:#000000;
+color:#FFFBFE;
+padding:15px;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+#head{
+grid-area:head;
+}
+#art{
+grid-area:art;
+}
+#fig{
+grid-area:fig;
+width:auto;
+height:auto;
+padding:0px;
+margin:0px;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+#a1{
+grid-area:a1;
+}
+#a2{
+grid-area:a2;
+}
+#a3{
+grid-area:a3;
+}
+#foot{
+grid-area:foot;
+}
+#fig2{
+grid-area:fig2;
+width:auto;
+padding:0px;
+margin:0px;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+#fig3{
+grid-area:fig3;
+width:auto;
+padding:0px;
+margin:0px;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+#fig4{
+grid-area:fig4;
+width:auto;
+padding:0px;
+margin:0px;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+#art2{
+grid-area:art2;
+}
+#art3{
+grid-area:art3;
+}
+#art4{
+grid-area:art4;
+}
+#art5{
+grid-area:art5;
+}
+#art6{
+grid-area:art6;
+}
+#fig5{
+grid-area:fig5;
+width:auto;
+padding:0px;
+margin:0px;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+#fig6{
+grid-area:fig6;
+width:100%;
+padding:0px;
+margin:0px;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+#art7{
+grid-area:art7;
+}
+#art8{
+grid-area:art8;
+}
+#art9{
+grid-area:art9;
+}
+#art10{
+grid-area:art10;
+}
+#contentem{
+grid-template-columns:1fr;
+grid-template-areas:
+'head'
+'art7'
+'fig6'
+'art9'
+'art8'
+'a1'
+'a2'
+'a3'
+'foot';
+}
+#contenthome{
+grid-template-columns:1fr;
+grid-template-areas:
+'head'
+'art'
+'fig'
+'fig2'
+'art2'
+'a1'
+'a2'
+'a3'
+'foot';
+}
+#contentfight{
+grid-template-columns:1fr;
+grid-template-areas:
+'head'
+'art4'
+'fig4'
+'fig5'
+'art5'
+'art6'
+'a1'
+'a2'
+'a3'
+'foot';
+}
+#contentpot{
+grid-template-columns:1fr;
+grid-template-areas:
+'head'
+'art'
+'fig'
+'art2'
+'art3'
+'fig3'
+'a1'
+'a2'
+'a3'
+'foot';
+}
+/**************************************************/
+@media only screen and (min-width:800px){
+#navdesk{
+display:grid;
+}
+#navmob{
+display:none;
+}
+#contenthome{
+grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;
+grid-template-areas:
+'head head head head head head'
+'fig fig fig art art art'
+'art2 art2 art2 fig2 fig2 fig2'
+'a1 a1 a2 a2 a3 a3'
+'foot foot foot foot foot foot';
+}
+#contentpot{
+grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;
+grid-template-areas:
+'head head head head head head'
+'fig fig fig art art art'
+'art2 art2 art2 fig3 fig3 fig3'
+'art3 art3 art3 art3 art3 art3'
+'a1 a1 a2 a2 a3 a3'
+'foot foot foot foot foot foot';
+}
+#contentem{
+grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;
+grid-template-areas:
+'head head head head head head'
+'fig6 fig6 fig6 art7 art7 art7'
+'art9 art9 art9 art9 art9 art9'
+'art8 art8 art8 art8 art8 art8'
+'a1 a1 a2 a2 a3 a3'
+'foot foot foot foot foot foot';
+}
+#contentfight{
+grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;
+grid-template-areas:
+'head head head head head head'
+'fig4 fig4 fig4 art4 art4 art4'
+'art5 art5 art5 fig5 fig5 fig5'
+'art6 art6 art6 art6 art6 art6'
+'a1 a1 a2 a2 a3 a3'
+'foot foot foot foot foot foot';
+}
+#contentref{
+grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;
+grid-template-areas:
+'head head head head head head'
+'art10 art10 art10 art10 art10 art10'
+'foot foot foot foot foot foot';
+}
+}/*end desktop media query*/
+/*font-family: 'EB Garamond', serif;
+font-family: 'Source Serif Pro', serif;
+font-family: 'Slabo 27px', serif;*/
