@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>DPGraph - Redesigned</title>
+<link rel='icon' href='favicon.ico' type='image/x-icon'/>
+    <link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap"
+rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:ital@1&display=swap" rel="stylesheet">
+    <script src="myscript.js">
+	
+</script>
+
+  </head>
+
+  <body>
+
+	
+	<div class="grid-container">	
+	<div class="header">
+	
+	
+	<ul>
+	  <li class="list"><a href="#main">Main Screen</a></li>
+	  <li class="list"><a href="#intro">What DPGraph is</a></li>
+	  <li class="list"><a href="#doc">Documentation</a></li>
+	  <li class="list"><a href="#UCA">User Created Art</a></li>
+	  <li class="list"><a href="#copy">Copyright</a></li>
+	</ul>
+	
+	<h2>DPGraph</h2><a id="main">
+	<h4>Dynamic Photorealistic 3D Graphing Software
+	for Math and Physics Visualization</h4></a>
+	<div class="button">
+	<a href="http://www.dpgraph.com/InstallDPGraphViewer.exe" class="btn
+	btn-one"> Get The Free Program!</a>
+	<a href="http://www.dpgraph.com/index.html" class="btn btn-two"> The
+	Previous/Official Site</a>
+	<a href="http://www.dpgraph.com/InstallDPGraph.exe" class="btn
+	btn-three"> Get The Full Program!</a>
+	</div>
+	</div>
+	</div>
+
+	<div class="middle"><a id="intro">
+	<p>The world's most powerful software for math and physics
+	visualization. Create beautiful, interactive, dynamic, photorealistic
+	2D, 3D, 4D, 5D, 6D, 7D and 8D graphs. So easy to use that even junior
+	high and senior high students have had their graphs published.
+	Includes hundreds of examples contributed by users from around the
+	world.</p></a>
+
+	<p>Over two million mathematicians, physicists, teachers and students
+	at over 1,000 colleges, universities and K-12 schools worldwide are
+	already licensed.</p>
+
+	<p>Optimized for the internet -- search for DPGraph using your
+	favorite search engine to find ways that people are using DPGraph for
+	both classroom and distance learning. Used for pre-algebra, geometry,
+	trigonometry and general physics, through multivariable calculus,
+	field theory, quantum mechanics and gravitation.</p>
+	
+	<p>Use time and color as extra dimensions (to create motion or encode
+	momentum, for example). Use the scrollbar to vary parameters in
+	realtime, to slice through graphs, or to vary transparency. Programmed
+	entirely in assembly language for maximum speed.</p>
+
+	<p>Graph functions, equations, conic sections, planes, spheres,
+	toruses, parametric curves and surfaces, implicit equalities and
+	inequalities, volume intersections, volumes of integration, vector
+	fields, surfaces of revolution, equipotential surfaces, and much more,
+	in rectangular, polar, cylindrical, or spherical coordinates.</p>
+	<!-- Scroller 1 -->
+	<div class="left1">
+		<a class="site" href="http://www.dpgraph.com/implicit-equations.html" id="doc">(All
+		Of The Offical Site's Documentation Can Be Found Here!)</a>
+		<p><strong>COMMON ERRORS:</strong> The seven most common mistakes when
+		creating graphs in the EDIT dialog box are:
+		<ol>
+		<li>leaving out asterisks for multiplication;</li>
+		<li>Leaving out equals signs or inequality signs;</li>
+		<li>Leaving out the parentheses for lists;</li>
+		<li>Trying to use equalities in intersections (DPGraph can only
+		intersect inequalities, i.e. regions of space);</li>
+		<li>Putting a space inside the two-character symbols :=, >=, or &lt;=;</li>
+		<li>Using the parametric variables u or v in implicit graphs;</li>
+		<li>Using the implicit variables x, y, z, r, theta, rho, or phi in
+		parametric graphs.</li>
+		</ol>
+	
+	<p><strong>Wrong:</strong>
+	<ul>
+		<li>graph3d( 3x = z^2 )</li>
+		<li>graph3d( x^2+y^2 )</li>
+		<li>graph3d( x=1, y=1 )</li>
+		<li>graph3d( x=1 & y=1 )</li>
+		<li>graph3d( z^2> =x^2 )</li>
+		<li>graph3d( z=u^2+v^2 )</li>
+		<li>graph3d( rectangular(x,y,sin(x+y)) )</li>
+	</ul>
+		
+		<p><strong>Right:</strong>
+	<ul>
+		<li>graph3d( 3*x = z^2 )</li>
+		<li>graph3d( z = x^2+y^2 )</li>
+		<li>graph3d( ( x=1, y=1 ) )</li>
+		<li>graph3d( x>1 & y>=1 )</li>
+		<li>graph3d( z^2 >= x^2 )</li>
+		<li>graph3d( z=x^2+y^2 )</li>
+		<li>graph3d( rectangular(u,v,sin(u+v)) )</li>
+	</ul>
+	
+		<p><strong>INEQUALITIES</strong>: When graphing an inequality, such as
+		<strong>GRAPH3D</strong>( X>1 ), remember that "blue is true"; the
+		bluest side of the graph is the region of space for which the
+		inequality is true, the reddest side of the graph is the region of
+		space for which the inequality is false. If the inequality is true for
+		the surface itself, as in <strong>GRAPH3D</strong>( X>=1 ), then the
+		bluest side is pure blue; if the inequality is false for the surface
+		itself, as in <strong>GRAPH3D</strong>( X>1 ), then the reddest side
+		is pure red.</p>
+
+		<p><strong>DEFAULTS.DPG</strong>: With experience you may find the
+		following technique useful when exploring a new surface. OPEN the file
+		<strong>DEFAULTS.DPG</strong>, go to <strong>EDIT</strong>, modify the
+		default equation, and then <strong>EXECUTE</strong>. Since all of the
+		options are already in DEFAULTS.DPG they can be changed with very
+		little typing. If you like, SAVE the modified file under a different
+		name and it will be ready for future viewing and adjustments.</p>
+
+		<p><strong>RESOLUTION</strong>: The easiest way to improve the
+		appearance of some graphs is to increase the resolution. The default
+		resolution is 21 by 21 by 21 for implicit graphs, and 40 by 40 for
+		parametric surfaces. To change the resolution for implicit graphs, use
+		the <strong>EDIT</strong> dialog box to insert a line such as the
+		following before the <strong>GRAPH3D</strong> command:
+	<ul>
+		<li>graph3d.resolution := 30</li>
+	</ul>
+	
+		<p><strong>For parametric surfaces:</strong>
+	<ul>
+		<li>graph3d.stepu := 50</li>
+		<li>graph3d.stepsv := 50</li>
+	</ul>
+	<br>
+		You may find it useful to use the technique described in the previous
+		section on <strong>DEFAULTS.DPG</strong>
+
+		<p><strong>COPYING A GRAPH TO THE CLIPBOARD:</strong> Click on
+		<strong>CLIPBOARD</strong> to copy a picture of the graph to the
+		clipboard. To copy a picture of the entire window (including the
+		border, etc.) to the clipboard, simultaneously press down the
+		<strong>ALT</strong> and <strong>PRINTSCREEN</strong> keys. To copy a
+		picture of the whole screen to the clipboard, press
+		<strong>PRINTSCREEN.</strong></p>
+
+		<p><strong>COPYING A GRAPH INTO ANOTHER APPLICATION:</strong> If the
+		other application supports pasting, first copy the graph to the
+		clipboard. Then click on <strong>EDIT</strong> in the other
+		application, then click on <strong>PASTE.</strong></p>
+
+		<p><strong>PRINTING A GRAPH:</strong> First copy the the graph to an
+		application, such as Word or Paint, that supports printing. Then click
+		on <strong>FILE</strong> in the other application, then click on
+		<strong>PRINT.</strong></p>
+		<p><strong>FILE FORMAT:</strong> DPGraph files have a file type of
+		.DPG. There are two kinds of DPG files: binary and ASCII. DPGraph can
+		read and write either type of DPG file, but the DPGraph Viewer can
+		only read binary DPG files. Binary DPG files are compressed and
+		contain error detection information for more reliable transmission.
+		<strong>ASCII DPG</strong> files are readable and editable by Notepad
+		and many other text editors. Each line in the file is a separate
+		command for DPGraph. For example, a file might look like this:
+	<ul>
+		<li>graph3d.view:=top</li>
+		<li>graph3d.perspective:=false</li>
+		<li>graph3d(z=3*sin(x*y))</li>
+	</ul>
+	<br>
+		Each command must start on a separate line. The GRAPH3D command must
+		be the last command.
+	
+		<p><strong>UNINSTALLATION:</strong> There are two ways to remove
+		DPGraph from your hard disk drive.
+	<ul>
+		<li>Method 1: click on <strong>START - SETTINGS - CONTROL PANEL -
+		ADD/REMOVE PROGRAMS,</strong> then scroll to DPGraph in the window,
+		select it, and click on <strong>ADD/REMOVE.</strong></li>
+		<li>Method 2: click on <strong>START - PROGRAMS - DPGRAPH -
+		UNINSTALL.</strong></li>
+	</ul>
+	</div>
+	
+	<!-- Scroller 2 -->
+	<div class="right1">
+		<a class="site" href="http://www.dpgraph.com/implicit-equations.html">(All
+		Of The Official Site's Documentation Can Be Found Here!)</a>
+		<p><strong>OPTIONS:</strong> Non-numeric default values are given in
+		capital letters.
+	<ul>
+		<li>graph3d.resolution (resolution along longest side of box, default
+		is 21; other sides of box have a resolution proportional to the length
+		of the side)</li>
+	</ul>
+	
+	<p><strong>VALUES FOR OPTIONS:</strong>
+	<ul>
+		<li><strong>true</strong> (for mesh, perspective, box, and vectorarrowhead)</li>
+		<li><strong>false</strong> (for mesh, perspective, box, and
+		vectorarrowhead)</li>
+		<li><strong>standard</strong> (for view, x is the most horizontal axis)</li>
+		<li><strong>textbook</strong> (for view, y is the most horizontal axis)</li>
+		<li><strong>top</strong> (for view)</li>
+		<li><strong>front</strong> (for view)</li>
+		<li><strong>side</strong> (for view)</li>
+		<li><strong>byheight</strong> (for color or vectorcolor)</li>
+		<li><strong>bysteepness</strong> (for color or vectorcolor)</li>
+		<li><strong>tail</strong> (for vectoralign)</li>
+		<li><strong>center</strong> (for vectoralign)</li>
+		<li><strong>tip</strong> (for vectoralign)</li>
+	</ul>
+	
+	<p><strong>CONSTANTS:</strong>
+	<ul>
+		<li>e (base of natural logarithms)</li>
+		<li>#e (base of natural logarithms for Derive users)</li>
+		<li>pi (pi)</li>
+	</ul>
+	<p><strong>VARIABLES:</strong>
+	<ul>
+		<li>x, y, z (variables for implicit graphing)</li>
+		<li>r (polar radius, r=sqrt(x^2+y^2))</li>
+		<li>theta (polar angle, 0&lt;=theta&lt;2*pi, theta=angle(-x,-y)+pi)</li>
+		<li>rho (spherical radius, rho=sqrt(x^2+y^2+z^2))</li>
+		<li>phi (spherical angle, 0&lt;=phi&lt;=pi, phi=angle(z,r))</li>
+		<li>u, v (variables for parametric graphs)</li>
+		<li>a, b, c, d ( variables for scrollbar)</li>
+		<li>time (current time for graphs that change with time)</li>
+	</ul>
+	
+	<p><strong>SYMBOLS:</strong>
+		<ul>
+		<li>= (equals, for entering equations)</li>
+		<li>&lt; (less than, for entering inequalities)</li>
+		<li>> (greater than, for entering inequalities)</li>
+		<li>&lt;= (less than or equal, for entering inequalities)</li>
+		<li>>= (greater than or equal, for entering inequalities)</li>
+		<li>& (intersection)</li>
+		<li>:= (assignment, for assigning values)</li>
+		<li>(...) (lists of arguments or equations)</li>
+		<li>+ (addition or leading plus sign)</li>
+		<li>- (subtraction or leading minus sign)</li>
+		<li>* (multiplication)</li>
+		<li>/ (division)</li>
+		<li>^ (powers)</li>
+		<li>|...| (absolute value, same as abs(...))</li>
+		<li>! (factorial)</li>
+	</ul>
+	
+	<p><strong>ONE ARGUMENT FUNCTIONS EXAMPLES: </strong>
+	<ul>
+		<li>abs (absolute value, same as |...|)</li>
+		<li>asin (arcsine)</li>
+		<li>asinh (hyperbolic arcsine)</li>
+		<li>atan (arctangent)</li>
+		<li>csc (cosecant)</li>
+		<li>csch (hyperbolic cosecant)</li>
+		<li>floor (greatest integer &lt;= argument)</li>
+		<li>gamma (gamma function)</li>
+		<li>ln (log base e)</li>
+		<li>log (log base 10)</li>
+		<li>sqrt (square root)</li>
+		<li>tan (tangent)</li>
+		<li>tanh (hyperbolic tangent)</li>
+	</ul>
+	
+	<p><strong>TWO ARGUMENT FUNCTIONS:</strong>
+	<ul>
+		<li>angle (-pi &lt;= angle of (x,y) from positive x axis &lt;= pi)</li>
+		<li>beta (beta function)</li>
+		<li>max (maximum value)</li>
+		<li>min (minimum value)</li>
+	</ul>
+	
+		<p><strong>THREE ARGUMENT FUNCTIONS:</strong>
+	<ul>
+		<li>cylindrical (parametric graph in cylindrical coordinates)</li>
+		<li>near (1 if (x,y,z) is near current grid, else undefined)</li>
+		<li>rectangular (parametric graph in rectangular coordinates)</li>
+		<li>spherical (parametric graph in spherical coordinates)</li>
+		<li>vector (graphs a vector field)</li>
+		</ul>
+	</div>
+		<div class="middle2"><a id="UCA">
+		<p>Down below are a few examples of art created using the DPGraph Editor! The images are all varied, which makes sense since unless you're copying something, it's hard to get a perfect replication of something someone else has made, which makes each and every project created unique. There's so much you can do with DPGraph, and these still images aren't the only things! You can also make fun and cool GIFS as well, though just make sure it doesn't blind yourself!</p></a>
+		</div>
+	<div class="left">	
+		<img src="images/enneper.jpg" alt="enneper">	
+		<p>This is a strange project, as it makes you wonder, are you seeing a tunnel, a skateboard ramp, a strange chimney, or a 'Bone Breaking Simulator' map on Roblox</p>
+		<img src="images/seashell.jpg" class="r" alt="seashell">
+		<p>This image is quite nice, using a good color variation and design to make a unique shape of a seashell. The colors and shading help it look more realistic, though one does wonder how sound would work since the sound would go right back into where it comes out</p>
+		<img src="images/func.jpg" alt="func">
+		<p>The design is unique on this picture, and it either looks like a fountain sprouting up some water, or a mutant creature coming out of a portal. Either way, pretty cool!</p>
+		<img src="images/diamant2.jpg" class="r" alt="diament">
+		<p>This one is quite interesting. A diamond that has eaten a bunch of crayons, thrown them up in a bucket, then took a shower in the remains. Okay aside from the coloring, the actual design is quite nice, and it does look like a real diamond you'd see in a cartoon</p>
+	</div>
+		<a href="http://www.dpgraph.com/math-art.html" class="btn btn-four">View ALL the other images!</a>
+		<br>
+		<br>
+	<div class="footer"><a id="copy"></a>
+		<p>Version 2016.12.19.</p>
+		<p>Visit www.dpgraph.com for the full documentation, or click on Open
+		and then Edit to examine the sample files for useful tips; this online
+		help is a summary.</p>
+		<p>Copying DPGraph for unlicensed users is illegal. DPGraph is a
+		trademark of DPGraph. Other company and products names are trademarks
+		or registered trademarks of their respective companies.</p>
+		<p>Copyright (C) 1997-2016 by DPGraph. All rights reserved.</p>
+	</div>
+
+</div>
+</body>
+</html>
