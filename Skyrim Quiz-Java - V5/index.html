@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Gamer Quiz</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link rel="manifest" href="manifest.json">
+	
+	<link rel="apple-touch-icon" href="/icons/icon-152x152.png">
+	<meta name="theme-color" content="#000000">	
+	<link rel='icon' href='favicon.ico' type='image/x-icon'/>
+</head>
+<body onLoad="initialize()">
+  <div id="lightbox" onclick="closeLightBox()">
+    <div id="message"></div>
+  </div>
+<h2>Gaming Quiz!</h2>
+<p>This is a short, twenty five second quiz about several different games! See if you're a true gamer! If you run out of time, be a good sport and restart! If you don't want to see the timer, click the button!</p>
+<button onclick="myFunction()" id="Button">Hide the Timer!</button>
+
+<div class="grid-container">
+  <div class="header">
+  <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+	<div id="countdown"></div>
+    <div id="question">The Question</div>
+  </div>
+  
+  <div class="left">
+    <div>
+    Possible Answers
+     <div class="options" id="a" onclick="markIt('a')">A.</div>
+	 <div class="options" id="b" onclick="markIt('b')">B.</div>
+     <div class="options" id="c" onclick="markIt('c')">C.</div>
+	 <div class="options" id="d" onclick="markIt('d')">D.</div>
+	</div>
+  </div> 
+
+  
+  <div class="right"> <img id="image" src="" alt=""></div>
+  
+
+
+  <div class="footer1">
+    <p>The Quiz!</p>
+  </div>
+  
+  <div class="footer2">
+    <p id="score">Score</p>
+  </div>
+</div>
+	<script src="java.js"></script>
+</body>
+</html>
+
+
