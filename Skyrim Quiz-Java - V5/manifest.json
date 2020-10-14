@@ -9,7 +9,7 @@
     "description": "A quiz on games ranging from Skyrim to Minecraft",
     "icons": [
         {
-            "src": "/icons/icon-192x192.png",
+            "src": "/icons/manifest/icon-192x192.png",
             "sizes": "192x192",
             "type": "image/png"
         },
