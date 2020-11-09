@@ -5,7 +5,7 @@ var platformInput = document.getElementById('platform');
 var result = document.querySelector('.result');
 
 
-//Fetch Players
+//Find player data
 const fetchPlayers = async (username, platform) => {
     const call = await fetch(`https://cors-anywhere.herokuapp.com/https://api.fortnitetracker.com/v1/profile/${platform}/${username}`, 
 	{
@@ -26,7 +26,7 @@ const showData = () => {
         const markup = 
 		`
             <div class="stats">
-                <h3>${respond.data.epicUserHandle}'s profile (${respond.data.platformNameLong})</h3>
+                <h3 id="h3">${respond.data.epicUserHandle}'s profile (${respond.data.platformNameLong})</h3>
                 <div class="row">
                     <div class="col-4">
                         <div class="stat">
@@ -34,7 +34,6 @@ const showData = () => {
                             <p>Wins</p>
                         </div>
                     </div>
-				 	
 					
                     <div class="col-4">
                         <div class="stat">
