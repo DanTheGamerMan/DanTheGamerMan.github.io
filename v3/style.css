@@ -14,8 +14,18 @@
 }
 
 a{
+	font-family: 'Cabin', sans-serif;
 	color:white;
 }
+
+#fish{
+	font-family: 'Cabin', sans-serif;
+}
+
+h4{
+	font-family: 'Monda', sans-serif;
+}
+
 
 body{
 	  background-image:url(images/bg.jpg);
