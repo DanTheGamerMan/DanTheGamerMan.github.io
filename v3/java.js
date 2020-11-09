@@ -110,9 +110,20 @@ const clearPlayer = () => {
     result.innerHTML = '';
 }
 
+//Make the button earn it's keep
 Btn.addEventListener('click', function () {
+	if(usernameInput.value === "" || platformInput.value === 'Choose Platform'){
+		document.getElementById("error").innerHTML = "Please type something into the search box";
+		function closeerror(){
+			document.getElementById("error").style.display=" none";
+		}
+		// close the div in 5 secs
+		window.setTimeout( closeerror, 2000 );
+	}
+	else{
     showData();
     clearPlayer();
+	}
 });
 
 
