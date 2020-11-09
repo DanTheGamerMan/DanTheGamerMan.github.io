@@ -93,6 +93,11 @@ select {
 	padding:20px;
 }
 
+#error{
+	color:red;
+	background-color:black;
+}
+
 .stats .stat {
     background: white;
     color: #000;
