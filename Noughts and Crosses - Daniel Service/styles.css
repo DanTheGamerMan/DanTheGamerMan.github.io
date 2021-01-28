@@ -1,0 +1,85 @@
+body{
+	background-color:#273043;
+	display:flex;
+	justify-content:center;
+}
+
+main{
+	border:1px solid black;
+	text-align:center;
+	background-color:#d3d3d3;
+}
+
+
+#board{
+	display:grid;
+	grid-template:1fr 1fr 1fr / 1fr 1fr 1fr;
+	grid-gap:10px;
+	background-color:#d3d3d3;
+	border:25px solid white;
+	width:600px;
+	height:600px;
+	box-shadow:10px 10px 20px rgba(0,0,0,0.5);
+}
+
+#board > input{
+	background-color:#200116;
+	font-size:100px;
+	border-radius:20px;
+	border:none;
+	font-family: 'Potta One', cursive;
+}
+
+button:hover{
+	background-color:white;
+	color:black;
+}
+
+#board > input:hover{
+	background-color:white;<<
+	border:1px solid black;
+}
+
+button{
+	padding:20px 75px;
+	font-size:25px;
+	margin:30px;
+	color:white;
+	border-radius:20px;
+	border:2px solid black;
+	background-color:navy;
+}
+
+h1{
+	font-size:40px;
+}
+
+#container{
+	width:100%;
+	height:100%;
+	background-color:rgba(0,0,0,0.5);
+	position:absolute;
+	display:none;
+	justify-content:center;
+	align-items:center;
+}
+
+#popup{
+	width:500px;
+	height:300px;
+	text-align:center;
+	background-color:white;
+	border-radius:20px;
+	position:relative;
+}
+
+#x{
+	width:40px;
+	position:absolute;
+	right:1px;
+}
+
+#cat{
+	width:70%;
+	height:60%;
+}
