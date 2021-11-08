@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>TV Maze Example</title>
+    
+    <!-- include an external style sheet -->
+    <link rel="stylesheet" href="style.css">  
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Chivo:wght@300&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <!-- include an external JavaScript file -->
+    <script src="apiexample.js"></script>
+  </head>
+     
+   <body onLoad="initialize()">
+  <h1>TV Shows at TV Maze</h1>
+  	 <div id="notmain">
+	<input type="text" id="search"> 
+	<br>
+	<br>
+     <button id="button" onclick="fetchData()">Look Up TV Show</button>
+  
+    
+     <div id="main">
+     
+     </div>
+	
+         <div id="lightbox" onclick="closeLightBox()">
+      <div id="message"></div>
+    </div>
+    
+     <br>
+      <p>This script uses a fetch request to get TV Data from a free api called TV Maze.</p>
+	</div>
+  </body>
+  
+</html>
+
+
+
+
